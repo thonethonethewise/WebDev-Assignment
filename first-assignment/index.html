@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background: linear-gradient(to right bottom, #fefae0, #dda15e);
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1{
+            color: #283618;
+        }
+        h3{
+            background: #bc6c25;
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: #fefae0;
+        }
+        /* #type{
+            position: absolute;
+        } */
+        p{
+            text-transform: capitalize;
+            color: #283618;
+            font-weight: bold;
+            font-size: 20px;
+            overflow: hidden;
+            line-height: 1;
+            white-space: nowrap;
+            border-right: 3px solid #606c38;
+            animation: text 4s steps(35, end), cursor 1.5s step-end infinite;
+        }
+        @keyframes text {
+            from { width: 0; }
+            to { width: 100%; }
+            }
+            @keyframes cursor {
+            from, to { border-color: transparent; }
+            50% { border-color: #606c38; }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Hi Everyone.</h1>
+        <h3>I'm Thone Thone.</h3>
+
+        <div id="type">
+        <p>This is my first node js server.</p>
+        </div>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
