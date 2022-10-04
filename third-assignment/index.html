@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+            display: inline;
+        }
+        button{
+            background-color: rgb(53, 21, 21);
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        input{
+            outline: none;
+            border: 1px dashed rgb(53, 21, 21);
+            padding: 10px 15px;
+        }
+        p{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        span{
+            font-weight: bold;
+            color: rgb(53, 21, 21);
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h4>Number count: </h4>
+        <input type="number" id="count" min="1" max="10">
+        <button id="btn">Generate Number!</button>
+    
+        <p>
+            Your Number is: <span id="number"></span>
+        </p>
+    </div>
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let count = document.getElementById('count');
+        let number = document.getElementById('number');
+
+        btn.addEventListener('click', () => {
+            number.innerText = Math.floor(Math.random() * (10 ** count.value))
+        }) 
+
+    </script>
+</body>
+</html>
